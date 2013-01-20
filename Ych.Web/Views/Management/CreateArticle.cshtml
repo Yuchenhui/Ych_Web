@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "CreateArticles";
+    Layout = "~/Views/Shared/_ManagementLayout.cshtml";
+}
+@model Ych.Model.Article
+
+
+@using (Html.BeginForm("ArticlePost", "Management", FormMethod.Post))
+{
+    <fieldset>
+        <legend>Create Article</legend>
+        <ol>
+            <li>
+                @Html.LabelFor(m => m.Title)
+                @Html.TextBoxFor(m => m.Title)
+            </li>
+            <li>
+                @Html.LabelFor(m => m.TypeId)
+                @Html.DropDownList("TypeId", ViewBag.TypeList as SelectList)
+            </li>
+            <li>
+                @Html.LabelFor(m => m.Content)
+                @Html.TextAreaFor(m => m.Content);
+            </li>
+            <li>
+                @Html.LabelFor(m => m.Status)
+                @Html.DropDownList("Status", ViewBag.StatusList as SelectList)
+            </li>
+        </ol>
+        <input type="submit" value="更改密码" />
+    </fieldset>
+
+
+}

@@ -1,0 +1,9 @@
+﻿@model List<Ych.Model.Article>
+
+@{
+    ViewBag.Title = "Articles";
+    Layout = "~/Views/Shared/_ManagementLayout.cshtml";
+}
+
+<h2>Articles</h2>
+@Html.ActionLink("Create New Article", "CreateArticle", "Management")
