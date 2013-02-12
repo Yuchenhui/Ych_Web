@@ -30,6 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="lua51">
+      <HintPath>..\packages\lua51.dll</HintPath>
+    </Reference>
+    <Reference Include="LuaInterface">
+      <HintPath>..\packages\LuaInterface.dll</HintPath>
+    </Reference>
     <Reference Include="MongoDB.Driver">
       <HintPath>D:\MongoDB\DLLS\MongoDB.Driver.dll</HintPath>
     </Reference>
@@ -43,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountService.cs" />
+    <Compile Include="LuaService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

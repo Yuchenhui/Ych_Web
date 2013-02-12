@@ -50,6 +50,7 @@ namespace Ych.Web.Controllers
             return View(result.Ok);
         }
 
+        [HttpPut]
         private SelectList CreateStatusList()
         {
             Dictionary<int,string> statusList= new Dictionary<int, string>();

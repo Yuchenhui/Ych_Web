@@ -6,18 +6,16 @@ using System.Web.Mvc;
 
 namespace Ych.Web.Controllers
 {
-    public class HomeController : Controller
+    public class LuaController : Controller
     {
         //
-        // GET: /Home/
+        // GET: /Lua/
 
         public ActionResult Index()
         {
-            ViewBag.Header = "Everything is Rebuliding";
+            ViewBag.Header = "Everything is Rebuliding by Lua";
             return View();
         }
-
-
 
     }
 }
