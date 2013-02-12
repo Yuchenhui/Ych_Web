@@ -8,6 +8,6 @@ namespace Ych.Service
 {
     public class LuaService
     {
-        public static Lua luaVM = new Lua();
+        public static Lua luaVM = new Lua();  
     }
 }
